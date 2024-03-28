@@ -43,7 +43,7 @@ myrequest.onload = function () {
 
   //console.log(result);
   console.log("List of country that uses US dollars as currency:-");
-  let a1 = result.filter((e) => {
+  result.filter((e) => {
     if (typeof e.currencies === "object") {
       const p = Object.getOwnPropertyNames(e.currencies);
       if (p[0] === "USD") console.log(e.name.common);
